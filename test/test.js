@@ -9,6 +9,7 @@ const petURL = baseURL + pet;
 describe('Create user', async() => {
     it('check status code and properties of body response', async() => {
         let response = await post(userURL, userBody)
+        console.log("create user", response)
         expect(response.code).to.be.equal(200)
         expect(response).to.have.all.keys(
             'code',
@@ -20,12 +21,13 @@ describe('Create user', async() => {
     it('Check the information of user', async() => {
         const getUserURL = userURL + "/" + userBody.username
         let getInfo = await get(getUserURL)
+        console.log("user info: ", getInfo)
         expect(getInfo).to.own.include(userBody)
     });
 });
 
 describe('Names of avaliable pets', async() => {
-    it('check JSON response', async() => {
+    it('Names of avaliable pets', async() => {
         let url = petURL + '?status=available'
         let response = await get(url)
         let listAvailables = await available(response)
