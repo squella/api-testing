@@ -1,0 +1,17 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "Api tets for back end exposed rest API endpoints",
+    "main": ".mocharc.js",
+    "scripts": {
+        "test": "mocha --timeout 5000"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^8.2.1",
+        "node-fetch": "^2.6.1"
+    }
+}
