@@ -57,6 +57,9 @@ To create a new test case, you must follow the following steps:
    Run the test cases
 ---
 ## References
+
 [Pet store](https://petstore.swagger.io/)
+
 [Mocha](https://mochajs.org/)
+
 [Chai](https://www.chaijs.com/)
