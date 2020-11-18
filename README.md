@@ -34,7 +34,7 @@ You’ll need Node.js installed. Install at least v12.16.1 or higher as this is 
 To install the framework, you must follow the following steps:   
 
 1. ``` 
-    git clone https://steps.everis.com/git/NEDBNG/nedb_api_test
+    git clone https://github.com/squella/api-testing.git
 2. ```
     npm install
 ### Run test cases 
